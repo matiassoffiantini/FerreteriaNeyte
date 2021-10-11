@@ -1,0 +1,201 @@
+*{text-decoration:none; list-style:none; margin:0px; padding:0px; outline:none;}
+body{margin:0px; 
+    padding:0px; 
+    font-family: 'Open Sans', sans-serif;
+    background-repeat:no-repeat;
+    background-image: url("../img/fotofreepik-min-min.jpg");
+    background-size:100%;
+    background-position: auto;
+    width: auto;
+    height: auto;
+    }
+/*section{width:100%; max-width:800px; margin:0px auto; display:table; position:relative;}*/
+h1{margin:0px auto; display:table; font-size:26px; padding:40px 0px; color:#002e5b; text-align:center;}
+h1 span{font-weight:500;}
+
+/*Comentario 09/09*/
+header{width:100%; display:table; margin-bottom:10px;}
+#logo{float:left; font-size:14px; text-transform:uppercase; color:#060606; font-weight:600; padding:10px 0px;}
+nav{width:auto; float:left;}
+nav ul{display:table; float:right;}
+nav ul li{float:left;}
+nav ul li:last-child{padding-right:0px;}
+nav ul li a{color:#060606; font-size:15px; padding: 10px 10px; display:inline-block; transition: all 0.5s ease 0s;}
+nav ul li a:hover{background-color:#002e5b; color:white; transition: all 0.5s ease 0s;}
+nav ul li a:hover i{color:white; transition: all 0.5s ease 0s;}
+nav ul li a i{padding-right:10px; color:#002e5b; transition: all 0.5s ease 0s;}
+
+.toggle-menu ul{display:table; width:25px;}
+.toggle-menu ul li{width:100%; height:3px; background-color:#002e5b; margin-bottom:4px;}
+.toggle-menu ul li:last-child{margin-bottom:0px;}
+
+/* 
+/*input[type=checkbox], label{display:none;}*/
+
+.content{display:table; margin-bottom:60px; width:900px;}
+.content h2{font-size:18px; font-weight:500; color:#002e5b; border-bottom:1px solid white; display:table; padding-bottom:10px; margin-bottom:10px;}
+
+footer{display:table; padding-bottom:30px; width:100%;}
+.social{margin:0px auto; display:table; display:table;}
+.social li{float:left; padding:0px 10px;}
+.social li a{color:#002e5b; transition: all 0.5s ease 0s;}
+.social li a:hover{color:#fde428; transition: all 0.5s ease 0s;}
+
+main{
+    float: left;
+}
+
+main>aside { border: 2px blue solid;
+    min-width: 25%;
+    margin: 0.5rem;
+    float: left;
+}
+
+/* PARA IFRAME: width="70%" height="350" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" align:center
+width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"*/
+main>iframe {
+    border: 2px blue solid;
+    min-height: 80px;
+    min-width: 25%;
+    width: 80%;
+    margin: 0.5rem;
+    float: left;
+}
+
+/*@media only screen and (max-width: 1440px) {
+section{max-width:95%;}
+}*/
+
+/*Para la parte de responsive*/
+@media only screen and (max-width: 280px) {
+/*header{padding:20px 0px;}
+#logo{padding:0px;}
+input[type=checkbox] {position: absolute; top: -9999px; left: -9999px; background:none;}
+input[type=checkbox]:fous{background:none;}
+label {padding:8px 0px; display:inline-block; cursor:pointer; }
+input[type=checkbox]:checked ~ nav {display:block;}*/
+
+nav{
+    display:none; 
+    position:absolute; 
+    right:0px;
+    top:13px;
+    background-color:#002e5b; 
+    padding:0px; 
+    z-index:19;
+    display: inline-block;
+}
+nav ul{
+    width:auto;
+}
+nav ul li{
+    float:none;
+    padding:0px;
+    width:100%;
+    display:table;
+    }
+nav ul li a{
+    color:#FFF; 
+    font-size:15px; 
+    padding:10px 10px; 
+    display:block; 
+    border-bottom: 1px solid rgba(225,225,225,0.1);
+}
+nav ul li a i{
+    color:#fde428;
+    padding-right:13px;
+}
+}
+@media only screen and (max-width: 980px) {
+.content{width:90%;}
+}
+
+@media only screen and (max-width: 568px) {
+h1{padding:25px 0px;}
+h1 span{display:block;}
+}
+
+@media only screen and (max-width: 360px) {
+h1{font-size:20px;}
+label{padding:5px 0px;}
+#logo{font-size: 20px;}
+nav{top:47px;}
+}
+
+@media only screen and (max-width: 320px) {
+h1 {padding: 20px 0px;}
+}
+
+h1 {
+    text-align: left; 
+    float:left;
+    margin-bottom:50px;
+}
+
+span {
+    color: #02005b;
+}
+
+.contacto {
+    margin-left: 2%;
+    /*color: #002e5b;*/
+}
+
+.my-element {
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 5s; /* don't forget to set a duration! */
+  }
+
+  @media screen and (min-width: 500px) {  
+    a {  
+        display: none  
+    }  
+}  
+
+
+.header-logo {
+    width: auto;
+    display: inline-block;
+    margin: 0.5rem;
+}
+
+
+.header-menubar {
+    left: auto;
+    position: relative;
+    top: auto;
+    width: auto;
+    display: inline-block;
+    margin: 0.5rem 0 0 1rem; /*Espacio entre palabras  Izquierda para que se separe del logo.*/
+}
+
+/* menu */
+.header-menubar ul {
+    list-style: none;
+}
+
+.header-menubar li {
+    float: left;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0.2rem 0; /*Espacio entre palabras  Izquierda para que se separe del logo.*/
+    /*padding: 0.5rem; Espacio entre palabras */
+    
+}
+
+.header-menubar a {
+    text-decoration: none;
+    color: black;
+}
+
+.header-menubar a:hover {
+    color: purple;
+}
+
+.header-menubar li a {
+    font-size: 1.2rem;
+    background: transparent;
+} 
